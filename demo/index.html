@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gridview-demo">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gridview module demo </title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gridview module demo</h1>
+      <ul class="nav nav-tabs">
+        <li role="presentation" ng-class="{active: $pageName =='gridview'}"><a href="#gridview">Gridview</a></li>
+      </ul>
+    </div>
+
+    <div ng-view class="container"></div>
+
+    <!--vendors-->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+
+    <!--ngui-->
+    <script src="/gridview/gridview.js"></script>
+
+    <!--demo-->
+    <script src="/demo/gridview/ctrl.js"></script>
+    <script src="/demo/demo.js"></script>
+
+  </body>
+</html>
+

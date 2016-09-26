@@ -1,0 +1,16 @@
+{
+  "name": "ngui-gridview",
+  "homepage": "https://github.com/PuujeU/ngui-gridview",
+  "authors": [
+  ],
+  "description": "Angular grid",
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular-route": "^1.5.7"
+  }
+}

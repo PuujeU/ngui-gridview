@@ -1,0 +1,31 @@
+<table class="table" ngui-gridview="$gridview" on-change="load()" >
+    <thead>
+    <tr>
+        <th ngui-gridview-order="id">Id</th>
+        <th ngui-gridview-order="name">Name shde</th>
+    </tr>
+    <tr>
+        <th ngui-gridview-filter-number="id"></th>
+        <th ngui-gridview-filter-text="name"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="it in $items">
+        <td>{{it.id}}</td>
+        <td>{{it.name}}</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="2">
+            <div ngui-paging active="page" total="$total">
+                <a>{{$page}}</a>
+            </div>
+        </td>
+    </tr>
+    </tfoot>
+</table>
+
+<pre>{{$gridview | json}}</pre>
+{{$total}}/{{page}}
+{{$items}}

@@ -1,0 +1,9 @@
+{
+  "name": "ngui-grid",
+  "version": "1.0.0",
+  "description": "Angular grid",
+  "scripts": {
+    "start":"http-server ."
+  },
+  "private": true
+}
