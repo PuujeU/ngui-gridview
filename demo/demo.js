@@ -16,9 +16,13 @@ angular.module('gridview-demo', ['ngRoute', 'ngui-gridview-component'])
 ;
 
 angular.module('ngui-gridview-component', [
-        'ngui-gridview'
+        'ngui-gridview',
+        'ngui-paging'
 ])
 .config(function ($nguiGridConfigProvider) {
         $nguiGridConfigProvider.setBaseTemplateUrl('/template');
+})
+.config(function ($nguiConfigProvider) {
+        $nguiConfigProvider.setBaseTemplateUrl('/bower_components/ngui-paging/tpl-bootstrap');
 })
 ;
